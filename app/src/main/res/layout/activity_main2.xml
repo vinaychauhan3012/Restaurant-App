@@ -135,10 +135,10 @@
               android:id="@+id/recyclerView2"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:layout_marginTop="8dp"
               android:clipToPadding="false"
               android:paddingStart="22dp"
               android:paddingEnd="22dp"
+              app:layout_constraintBottom_toBottomOf="parent"
               app:layout_constraintEnd_toEndOf="parent"
               app:layout_constraintStart_toStartOf="parent"
               app:layout_constraintTop_toTopOf="parent" />
@@ -170,6 +170,7 @@
             android:orientation="horizontal">
 
           <LinearLayout
+              android:id="@+id/homeBtn"
               android:layout_width="0dp"
               android:layout_height="match_parent"
               android:layout_weight="0.2"

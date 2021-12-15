@@ -37,31 +37,31 @@ public class CategoryAdaptor extends RecyclerView.Adapter<CategoryAdaptor.ViewHo
         switch (position){
             case 0 :
             {
-                url = "";
+                url = "cat_1";
                 holder.constraintLayout.setBackground(ContextCompat.getDrawable(holder.itemView.getContext(),R.drawable.category_background));
                 break;
             }
             case 1 :
             {
-                url = "";
+                url = "cat_2";
                 holder.constraintLayout.setBackground(ContextCompat.getDrawable(holder.itemView.getContext(),R.drawable.category_background));
                 break;
             }
             case 2 :
             {
-                url = "";
+                url = "cat_3";
                 holder.constraintLayout.setBackground(ContextCompat.getDrawable(holder.itemView.getContext(),R.drawable.category_background));
                 break;
             }
             case 3 :
             {
-                url = "";
+                url = "cat_4";
                 holder.constraintLayout.setBackground(ContextCompat.getDrawable(holder.itemView.getContext(),R.drawable.category_background));
                 break;
             }
             case 4 :
             {
-                url = "";
+                url = "cat_5";
                 holder.constraintLayout.setBackground(ContextCompat.getDrawable(holder.itemView.getContext(),R.drawable.category_background));
                 break;
             }
