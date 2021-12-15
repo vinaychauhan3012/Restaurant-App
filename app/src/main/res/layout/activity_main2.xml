@@ -54,11 +54,12 @@
             app:layout_constraintTop_toBottomOf="@+id/greetingText"
             app:layout_goneMarginTop="8dp" />
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imageView"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginEnd="32dp"
+            android:src="@drawable/logo"
             app:layout_constraintBottom_toBottomOf="@+id/textView2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/greetingText"
@@ -193,6 +194,7 @@
           </LinearLayout>
 
           <LinearLayout
+              android:id="@+id/feedbackBtn"
               android:layout_width="0dp"
               android:layout_height="match_parent"
               android:layout_weight="0.2"
@@ -238,6 +240,7 @@
           </LinearLayout>
 
           <LinearLayout
+              android:id="@+id/supportBtn"
               android:layout_width="0dp"
               android:layout_height="match_parent"
               android:layout_weight="0.2"

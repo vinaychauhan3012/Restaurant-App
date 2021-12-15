@@ -30,6 +30,9 @@ public class MainActivity2 extends AppCompatActivity {
     private void bottomNavigation() {
         FloatingActionButton floatingActionButton = findViewById(R.id.cartBtn);
         LinearLayout homeBtn = findViewById(R.id.homeBtn);
+        LinearLayout feedbackBtn = findViewById(R.id.feedbackBtn);
+        LinearLayout supportBtn = findViewById(R.id.supportBtn);
+
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,6 +46,18 @@ public class MainActivity2 extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),MainActivity2.class));
             }
         });
+        feedbackBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),FeedBackActivity.class));
+            }
+        });
+        supportBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),FeedBackActivity.class));
+            }
+        });
     }
 
     private void makePopularList() {
@@ -50,9 +65,9 @@ public class MainActivity2 extends AppCompatActivity {
         popularList = findViewById(R.id.recyclerView2);
         popularList.setLayoutManager(linearLayoutManager);
         ArrayList<FoodDomain> foodList = new ArrayList<>();
-        foodList.add(new FoodDomain("Paneer","paneer","desc",300.0));
-        foodList.add(new FoodDomain("Chole Bhatoore","chole","desc",200.0));
-        foodList.add(new FoodDomain("Dosa","dosa","desc",250.0));
+        foodList.add(new FoodDomain("Paneer","paneer","Matar paneer recipe – a popular Indian Curry dish made with green peas and Indian cottage cheese, is from the versatile Northern Indian cuisine that has many different (and delicious) variations",300.0));
+        foodList.add(new FoodDomain("Chole Bhatoore","chole","Chole Bhature also known as Chana Bhatura is one of the most popular Punjabi dish liked almost all over India. Chole stands for a spiced tangy chickpea curry and Bhatura is a soft and fluffy fried leavened bread.",200.0));
+        foodList.add(new FoodDomain("Dosa","dosa","A dosa is a thin, spicy, crispy crêpe-like food made from fermented rice, very popular in restaurants in South India. It may be served plain with sambar and chutneys such as coconut chutney (as pictured), or other curry or gravy.",250.0));
         popAdapter = new PopularAdaptor(foodList);
         popularList.setAdapter(popAdapter);
 
